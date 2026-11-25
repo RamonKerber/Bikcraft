@@ -1,5 +1,5 @@
 .bicicletas-bg {
-  background: linear-gradient(to right, var(--cor-0) 20%, var(--cor-11) 0%);
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
 
 .bicicletas {
@@ -16,14 +16,12 @@
 
 .bicicletas-imagem img {
   grid-area: 1/1;
-  width: 100%;
-  height: auto;
 }
- 
+
 .bicicletas-imagem span {
   grid-area: 1/1;
   place-self: start end;
-  margin-top: 12px;
+  margin-top: 20px;
   background: var(--cor-12);
   display: inline-block;
   padding: 8px 16px 8px 8px;
@@ -48,10 +46,10 @@
 .bicicletas h2::before {
   content: "";
   display: block;
-  width: 40px;
-  height: 4px;
-  background: var(--cor-p1);
-  margin-bottom: 12px;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
 }
 
 .bicicletas p {
@@ -62,13 +60,14 @@
   place-self: end;
 }
 
-.biciletas li {
+.bicicletas li {
   display: flex;
   align-items: center;
 }
 
-.biciletas li + li {
-  margin-top: 16px;
+.bicicletas ul {
+  display: grid;
+  gap: 16px;
 }
 
 .bicicletas-conteudo img {
